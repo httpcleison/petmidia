@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PETMIDIA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="user">
+            <img src="./src/logo.svg" alt="" class="logo">
+            <input type="file" id="fileId" accept="image/png, image/jpeg" class="imgPetMidia">
+            <label for="fileId" class="fileInputCus">
+                <img src="./src/btngaleria.svg" class="icon" alt="Ícone"> Carregar foto
+            </label>
+            <input type="text" name="" class="namepet" placeholder="Nome do seu pet...">
+            <textarea placeholder="Breve descrição..." class="description" cols="30" rows="10"></textarea>
+            <button class="btnsend">ENVIAR</button>
+        </div>
+        <div class="midia">
+            <div class="feed"></div>
+            <button class="carregar">Carregar mais</button>
+        </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

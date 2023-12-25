@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400&display=swap');
+
+body{
+    background-color: rgb(79, 96, 172);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.user{
+    width: 30vw;
+    height: 100vh;
+    background-color: #fffaca;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user button{
+    padding: 10px;
+    border-radius: 12px;
+    /* background-color: rgb(218, 136, 238); */
+    /* background-color: #9D5AC3; */
+    background-color: #BC00FF;
+    border: none;
+    cursor: pointer;
+}
+
+.fileInputCus{
+    border: 2px solid #ccc;
+    display: inline-block;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.fileInputCus img{
+    max-width: 110px;
+}
+
+.logo {
+    width: 250px;
+    cursor: not-allowed;
+}
+
+.namepet, .description {
+    width: 90%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid black;
+}
+
+.user input[type=file]{
+    display: none;
+}
+
+.midia {
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("./src/bg.jpg");
+    object-fit: cover;
+}
+
+.midia .feed{
+    overflow: auto;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feed > div{
+    width: 250px;
+    height: 390px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+    /* background-color: rgb(242, 200, 252); */
+    /* background-color: #fffaca; */
+    background-color: rgb(150, 143, 179);
+}
+
+.feed div:hover{
+    box-shadow: 1px 15px 37px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 15px 37px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 15px 37px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.feed > div > .foto{
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.feed > div > .like1{
+    width: 90px;
+}
+
+.like1:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.carregar{
+    width: 100%;
+    padding: 5px;
+    /* background-color: rgb(202, 151, 249); */
+    background-color: rgb(79, 96, 172);
+    border: none;
+    cursor: pointer;
+}
+
+.window_post{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(188, 109, 207, 0.521);
+}
+
+.window_post .imgPost{
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+
+}
+
+.window_post .like1{
+    width: 60px;
+}
+
+.window_post .texts_user{
+    display: flex;
+    flex-direction: column;
+}
+
+.window_post .buttonLike{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window_post .buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons .btnClose, .btnAlert{
+    max-width: 70px;
+    cursor: pointer;
+}
+
+.infosDiv, .infosDiv > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.infosDiv img{
+    width: 70px;
+}
+
+.infosDiv > div:hover{
+    box-shadow: -200px -200px 5px -200px rgba(0,0,0,0);
+-webkit-box-shadow: -200px -200px 5px -200px rgba(0,0,0,0);
+-moz-box-shadow: -200px -200px 5px -200px rgba(0,0,0,0);
+}
+
+@media (max-width: 800px) {
+    .container{
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .window_post{
+        display: flex;
+        flex-direction: column;
+    }
+}
